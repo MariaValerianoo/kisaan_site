@@ -11,17 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const refreshLanguage = () => {
     document.querySelectorAll('[data-es][data-en]').forEach(el => {
-      el.textContent = el.dataset[lang];
+      el.textContent = el.dataset[lang] || el.textContent;
     });
 
     document.documentElement.lang = lang;
 
     if (langToggle) {
       const span = langToggle.querySelector('span');
+      const nextLang = lang === 'es' ? 'EN' : 'ES';
       if (span) {
-        span.textContent = lang === 'es' ? 'EN' : 'ES';
+        span.textContent = nextLang;
       } else {
-        langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
+        langToggle.textContent = nextLang;
       }
     }
 
@@ -43,30 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  document.querySelectorAll('#navLinks a').forEach(a => {
-    a.addEventListener('click', () => {
-      if (window.innerWidth <= 1150 && navLinks) {
-        navLinks.classList.remove('open');
-      }
+  if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (window.innerWidth <= 1150) {
+          navLinks.classList.remove('open');
+        }
+      });
     });
-  });
-
-  const revealEls = document.querySelectorAll(
-    '.section, .page-card, .menu-group, .menu-category, .info-item, .gallery img, .pageimg'
-  );
-
-  revealEls.forEach(el => el.classList.add('reveal-item'));
-
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.14 });
-
-  document.querySelectorAll('.reveal-item').forEach(el => io.observe(el));
+  }
 
   const menuTabs = document.querySelectorAll('.menu-tab');
   const menuCategories = document.querySelectorAll('.menu-category[data-category]');
@@ -103,10 +89,31 @@ document.addEventListener('DOMContentLoaded', () => {
         activateCategory(firstTab.dataset.filter);
       }
     }
-  } else {
+  } else if (menuCategories.length) {
     menuCategories.forEach((category, index) => {
       category.classList.toggle('active', index === 0);
     });
+  }
+
+  const revealEls = document.querySelectorAll(
+    '.section, .page-card, .menu-group, .info-item, .gallery img, .pageimg'
+  );
+
+  revealEls.forEach(el => el.classList.add('reveal-item'));
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal-item').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal-item').forEach(el => el.classList.add('visible'));
   }
 
   refreshLanguage();
