@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.lang = lang;
 
     if (langToggle) {
-      const langSpan = langToggle.querySelector('span');
-      if (langSpan) {
-        langSpan.textContent = lang === 'es' ? 'EN' : 'ES';
+      const span = langToggle.querySelector('span');
+      if (span) {
+        span.textContent = lang === 'es' ? 'EN' : 'ES';
+      } else {
+        langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
       }
     }
 
@@ -69,22 +71,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuTabs = document.querySelectorAll('.menu-tab');
   const menuCategories = document.querySelectorAll('.menu-category[data-category]');
 
+  const activateCategory = (filter) => {
+    menuTabs.forEach(t => t.classList.remove('active'));
+    menuCategories.forEach(c => c.classList.remove('active'));
+
+    const activeTab = document.querySelector(`.menu-tab[data-filter="${filter}"]`);
+    const activeCategory = document.querySelector(`.menu-category[data-category="${filter}"]`);
+
+    if (activeTab) activeTab.classList.add('active');
+    if (activeCategory) activeCategory.classList.add('active');
+  };
+
   if (menuTabs.length && menuCategories.length) {
     menuTabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        menuTabs.forEach(t => t.classList.remove('active'));
-        menuCategories.forEach(c => c.classList.remove('active'));
-
-        tab.classList.add('active');
-
-        const targetCategory = document.querySelector(
-          `.menu-category[data-category="${tab.dataset.filter}"]`
-        );
-
-        if (targetCategory) {
-          targetCategory.classList.add('active');
-        }
+        const filter = tab.dataset.filter;
+        if (filter) activateCategory(filter);
       });
+    });
+
+    const currentActiveTab = document.querySelector('.menu-tab.active');
+    const currentActiveCategory = document.querySelector('.menu-category.active');
+
+    if (currentActiveTab && currentActiveTab.dataset.filter) {
+      activateCategory(currentActiveTab.dataset.filter);
+    } else if (currentActiveCategory && currentActiveCategory.dataset.category) {
+      activateCategory(currentActiveCategory.dataset.category);
+    } else {
+      const firstTab = menuTabs[0];
+      if (firstTab && firstTab.dataset.filter) {
+        activateCategory(firstTab.dataset.filter);
+      }
+    }
+  } else {
+    menuCategories.forEach((category, index) => {
+      category.classList.toggle('active', index === 0);
     });
   }
 
