@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let lang = 'es';
 
   const waMessages = {
-    es: 'https://wa.me/573000000000?text=Hola%20quiero%20reservar%20una%20mesa%20en%20Kisaan%20Indian',
-    en: 'https://wa.me/573000000000?text=Hello%20I%20would%20like%20to%20reserve%20a%20table%20at%20Kisaan%20Indian'
+    es: 'https://wa.me/34601997776?text=Hola%20quiero%20reservar%20una%20mesa%20en%20Kisaan%20Indian',
+    en: 'https://wa.me/34601997776?text=Hello%20I%20would%20like%20to%20reserve%20a%20table%20at%20Kisaan%20Indian'
   };
 
   const refreshLanguage = () => {
