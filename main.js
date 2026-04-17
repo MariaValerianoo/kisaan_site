@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const refreshLanguage = () => {
-    document.querySelectorAll('[data-es][data-en]').forEach(el => {
+    document.querySelectorAll('[data-en][data-es]').forEach(el => {
       el.textContent = el.dataset[lang] || el.textContent;
     });
 
