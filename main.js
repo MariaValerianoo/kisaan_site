@@ -2,15 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const langToggle = document.getElementById('langToggle');
   const navLinks = document.getElementById('navLinks');
   const menuToggle = document.getElementById('menuToggle');
-  let lang = 'es';
+
+  // 🔹 Inglés por defecto
+  let lang = localStorage.getItem('lang') || 'en';
 
   const waMessages = {
-    es: 'https://wa.me/573000000000?text=Hola%20quiero%20reservar%20una%20mesa%20en%20Kisaan%20Indian',
-    en: 'https://wa.me/573000000000?text=Hello%20I%20would%20like%20to%20reserve%20a%20table%20at%20Kisaan%20Indian'
+    es: 'https://wa.me/34601997776?text=Hola%20quiero%20reservar%20una%20mesa%20en%20Kisaan%20Indian',
+    en: 'https://wa.me/34601997776?text=Hello%20I%20would%20like%20to%20reserve%20a%20table%20at%20Kisaan%20Indian'
   };
 
   const refreshLanguage = () => {
-    document.querySelectorAll('[data-es][data-en]').forEach(el => {
+    document.querySelectorAll('[data-en][data-es]').forEach(el => {
       el.textContent = el.dataset[lang] || el.textContent;
     });
 
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langToggle) {
       const span = langToggle.querySelector('span');
       const nextLang = lang === 'es' ? 'EN' : 'ES';
+
       if (span) {
         span.textContent = nextLang;
       } else {
@@ -31,19 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // 🔹 Cambiar idioma y guardarlo
   if (langToggle) {
     langToggle.addEventListener('click', () => {
       lang = lang === 'es' ? 'en' : 'es';
+
+      // Guarda idioma elegido
+      localStorage.setItem('lang', lang);
+
       refreshLanguage();
     });
   }
 
+  // 🔹 Menú hamburguesa
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('open');
     });
   }
 
+  // 🔹 Cerrar menú en móvil
   if (navLinks) {
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
@@ -54,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 🔹 Tabs del menú
   const menuTabs = document.querySelectorAll('.menu-tab');
   const menuCategories = document.querySelectorAll('.menu-category[data-category]');
 
@@ -95,8 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 🔹 Animaciones reveal
   const revealEls = document.querySelectorAll(
-    '.section, .page-card, .menu-group, .info-item, .gallery img, .pageimg'
+    '.page-card, .menu-group, .info-item, .gallery img, .pageimg'
   );
 
   revealEls.forEach(el => el.classList.add('reveal-item'));
@@ -116,5 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal-item').forEach(el => el.classList.add('visible'));
   }
 
+  // 🔹 Aplicar idioma inicial
   refreshLanguage();
 });

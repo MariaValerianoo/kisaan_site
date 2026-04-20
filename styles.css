@@ -307,25 +307,11 @@ button{font:inherit}
   border-bottom:1px solid rgba(128,128,0,.14);
 }
 
-#historia .eyebrow{
-  color:#a7b35a;
-}
-
-#historia .title{
-  color:#f4eedf;
-}
-
-#historia .story-text{
-  color:#d1c6b3;
-}
-
-#historia .image-frame:before{
-  border-color:#a7b35a;
-}
-
-#historia .image-frame:after{
-  border-color:var(--accent);
-}
+#historia .eyebrow{color:#a7b35a}
+#historia .title{color:#f4eedf}
+#historia .story-text{color:#d1c6b3}
+#historia .image-frame:before{border-color:#a7b35a}
+#historia .image-frame:after{border-color:var(--accent)}
 
 /* MENU */
 #menu{
@@ -336,6 +322,8 @@ button{font:inherit}
 .menu-wrap{
   max-width:1100px;
   margin:0 auto;
+  width:100%;
+  overflow:hidden;
 }
 
 .menu-tabs{
@@ -358,6 +346,7 @@ button{font:inherit}
   cursor:pointer;
   transition:.25s ease;
   min-height:44px;
+  white-space:nowrap;
 }
 
 .menu-tab:hover,
@@ -369,19 +358,11 @@ button{font:inherit}
 
 .menu-category{
   display:none;
+  width:100%;
+  overflow:hidden;
 }
 
-/* visible si JS funciona */
 .menu-category.active{
-  display:block !important;
-}
-
-/* parche para que no desaparezca todo el menú si falla JS */
-#menu .menu-wrap > .menu-category:first-of-type{
-  display:block;
-}
-
-#menu .menu-wrap > .menu-category.active{
   display:block !important;
 }
 
@@ -392,6 +373,8 @@ button{font:inherit}
   margin-bottom:10px;
   line-height:1.15;
   color:#f5ede2;
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .cat-sub{
@@ -400,6 +383,8 @@ button{font:inherit}
   margin:0 auto 34px;
   line-height:1.7;
   color:var(--muted);
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .menu-group{
@@ -409,6 +394,8 @@ button{font:inherit}
   border-radius:18px;
   background:rgba(255,255,255,.02);
   overflow:hidden;
+  width:100%;
+  min-width:0;
 }
 
 .menu-group-title{
@@ -418,16 +405,18 @@ button{font:inherit}
   padding-bottom:10px;
   border-bottom:1px solid rgba(255,255,255,.08);
   color:var(--text);
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .menu-item{
   padding:18px 0;
   border-bottom:1px solid rgba(255,255,255,.08);
+  width:100%;
+  min-width:0;
 }
 
-.menu-item:last-child{
-  border-bottom:none;
-}
+.menu-item:last-child{border-bottom:none}
 
 .menu-item-top{
   display:flex;
@@ -435,11 +424,13 @@ button{font:inherit}
   align-items:flex-start;
   gap:18px;
   width:100%;
+  min-width:0;
 }
 
 .menu-item-main{
   flex:1 1 auto;
   min-width:0;
+  overflow:hidden;
 }
 
 .dish-name{
@@ -449,6 +440,8 @@ button{font:inherit}
   margin-bottom:6px;
   color:var(--text);
   overflow-wrap:anywhere;
+  word-break:break-word;
+  min-width:0;
 }
 
 .dish-desc,
@@ -457,6 +450,8 @@ button{font:inherit}
   line-height:1.65;
   color:var(--muted);
   overflow-wrap:anywhere;
+  word-break:break-word;
+  min-width:0;
 }
 
 .dish-desc-alt{
@@ -474,6 +469,7 @@ button{font:inherit}
   color:var(--accent);
   white-space:normal;
   overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 /* ALÉRGENOS */
@@ -485,6 +481,8 @@ button{font:inherit}
   border-radius:18px;
   background:rgba(255,255,255,.025);
   box-shadow:0 10px 26px rgba(0,0,0,.16);
+  width:100%;
+  overflow:hidden;
 }
 
 .allergen-guide h3{
@@ -510,11 +508,16 @@ button{font:inherit}
   background:rgba(128,128,0,.06);
   border:1px solid rgba(128,128,0,.12);
   min-height:48px;
+  min-width:0;
+  overflow:hidden;
 }
 
 .legend-item small{
   color:#ddd1bf;
   line-height:1.35;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  min-width:0;
 }
 
 .legend-icon{
@@ -528,6 +531,7 @@ button{font:inherit}
   font-size:1rem;
   background:rgba(255,255,255,.05);
   border:1px solid rgba(255,255,255,.08);
+  flex-shrink:0;
 }
 
 .allergen-tags{
@@ -549,6 +553,7 @@ button{font:inherit}
   background:rgba(128,128,0,.07);
   color:var(--text);
   overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .allergen[title]{
@@ -564,7 +569,7 @@ button{font:inherit}
   color:#d5cab7;
 }
 
-/* GALERÍA DESTACADA */
+/* GALERÍA */
 #galeria{
   background:
     linear-gradient(180deg, rgba(128,128,0,.13), rgba(17,18,12,.96)),
@@ -575,13 +580,8 @@ button{font:inherit}
   border-bottom:1px solid rgba(128,128,0,.14);
 }
 
-#galeria .eyebrow{
-  color:#a7b35a;
-}
-
-#galeria .title{
-  color:#f4eedf;
-}
+#galeria .eyebrow{color:#a7b35a}
+#galeria .title{color:#f4eedf}
 
 .gallery{
   display:grid;
@@ -638,9 +638,7 @@ button{font:inherit}
   object-fit:cover;
 }
 
-.page-card .pad{
-  padding:18px;
-}
+.page-card .pad{padding:18px}
 
 .page-card h3{
   font-family:Cinzel,serif;
@@ -669,6 +667,8 @@ button{font:inherit}
   border:1px solid rgba(128,128,0,.12);
   padding:16px 18px;
   border-radius:16px;
+  overflow:hidden;
+  min-width:0;
 }
 
 .info-ico{
@@ -683,9 +683,12 @@ button{font:inherit}
   flex:0 0 auto;
 }
 
-.info-item strong{
-  display:block;
-  margin-bottom:6px;
+.info-item strong{display:block;margin-bottom:6px}
+
+.info-item div{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  min-width:0;
 }
 
 .map-wrap{
@@ -739,9 +742,7 @@ button{font:inherit}
   font-size:1.2rem;
 }
 
-.contact-section{
-  padding-bottom:42px;
-}
+.contact-section{padding-bottom:42px}
 
 /* FOOTER */
 .footer{
@@ -810,15 +811,8 @@ button{font:inherit}
   letter-spacing:.06em;
 }
 
-.social-ico.insta{
-  color:#d49f7d;
-  border:1px solid #d49f7d;
-}
-
-.social-ico.fb{
-  color:#9aa06d;
-  border:1px solid #9aa06d;
-}
+.social-ico.insta{color:#d49f7d;border:1px solid #d49f7d}
+.social-ico.fb{color:#9aa06d;border:1px solid #9aa06d}
 
 .footer-copy{
   width:100%;
@@ -949,19 +943,6 @@ button{font:inherit}
 }
 
 @media (max-width:768px){
-  .menu-wrap,
-  .menu-category,
-  .menu-group,
-  .menu-item,
-  .menu-item-top,
-  .menu-item-main,
-  .dish-name,
-  .dish-desc,
-  .dish-desc-alt,
-  .dish-price{
-    max-width:100%;
-  }
-
   .menu-tabs{
     justify-content:flex-start;
     gap:10px;
@@ -998,14 +979,6 @@ button{font:inherit}
 
   .allergen-legend{
     grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-
-  .cat-sub,
-  .dish-desc,
-  .dish-desc-alt,
-  .dish-name,
-  .allergen{
-    word-break:break-word;
   }
 }
 
@@ -1057,12 +1030,8 @@ button{font:inherit}
   .dish-name{font-size:1rem}
   .dish-desc,
   .dish-desc-alt{font-size:.92rem}
-  .allergen-guide{
-    padding:16px 14px;
-  }
-  .allergen-legend{
-    grid-template-columns:1fr;
-  }
+  .allergen-guide{padding:16px 14px}
+  .allergen-legend{grid-template-columns:1fr}
   .allergen-tags{gap:6px}
   .allergen{
     font-size:.74rem;
