@@ -51,530 +51,369 @@
     </header>
     <!-- Fin del header -->
 
-    <main>
+  <main>
 
-      <!-- =========================
-           SECCIÓN INICIO / HERO
-      ========================== -->
-      <section class="hero" id="inicio">
-        <div class="hero-content">
-          <div class="hero-kicker" data-es="Restaurante Indio" data-en="Indian Restaurant">
-            Restaurante Indio
-          </div>
+    <!-- =========================
+         SECCIÓN INICIO / HERO
+    ========================== -->
+    <section id="menu" class="section">
 
-          <!-- Nombre principal de la marca -->
-          <h1>KISAAN</h1>
-
-          <!-- Descripción breve del restaurante -->
-          <p data-es="Sabores auténticos de la India, preparados con pasión y tradición en cada plato." data-en="Authentic Indian flavors, prepared with passion and tradition in every dish.">
-            Sabores auténticos de la India, preparados con pasión y tradición en cada plato.
-          </p>
-
-          <!-- Botones de acción principal -->
-          <div class="hero-actions">
-            <a class="btn btn-primary whatsapp-link" href="https://wa.me/34601997776?text=Hola%20quiero%20reservar%20una%20mesa%20en%20Kisaan%20Indian" target="_blank" rel="noopener" data-es="Reservar Mesa" data-en="Reserve Table">Reservar Mesa</a>
-            <a class="btn btn-ghost" href="#menu" data-es="Ver Menú" data-en="View Menu">Ver Menú</a>
-          </div>
-        </div>
-      </section>
-      <!-- Fin sección inicio -->
-
-      <!-- =========================
-           SECCIÓN HISTORIA
-      ========================== -->
-      <section id="historia" class="section">
-        <div class="container">
-          <div class="eyebrow" data-es="Nuestra Historia" data-en="Our Story">Nuestra Historia</div>
-          <h2 class="title" data-es="Tradición y Pasión" data-en="Tradition and Passion">Tradición y Pasión</h2>
-
-          <div class="grid-2 story">
-            <!-- Texto descriptivo de la historia del restaurante -->
-            <div class="story-text">
-              <p data-es="Kisaan Indian Restaurant nació del deseo de compartir los auténticos sabores de la India con una presentación elegante y moderna. Cada plato combina especias, técnica y cariño para ofrecer una experiencia cálida y memorable." data-en="Kisaan Indian Restaurant was born from the desire to share the authentic flavors of India with an elegant and modern presentation. Every dish combines spices, technique, and care to deliver a warm, memorable experience.">
-                Kisaan Indian Restaurant nació del deseo de compartir los auténticos sabores de la India con una presentación elegante y moderna. Cada plato combina especias, técnica y cariño para ofrecer una experiencia cálida y memorable.
-              </p>
-              <p data-es="Queremos que la web refleje ese mismo ambiente: sofisticado, acogedor y muy visual, con acceso rápido al menú, la ubicación, el idioma y la reserva por WhatsApp." data-en="We want the website to reflect that same atmosphere: sophisticated, welcoming, and highly visual, with quick access to the menu, location, language, and WhatsApp booking.">
-                Queremos que la web refleje ese mismo ambiente: sofisticado, acogedor y muy visual, con acceso rápido al menú, la ubicación, el idioma y la reserva por WhatsApp.
-              </p>
-            </div>
-
-            <!-- Imagen representativa de la historia -->
-            <div class="image-frame">
-              <img class="pageimg" src="images/historia.jpg" alt="Historia Kisaan">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Fin sección historia -->
-
-      <!-- =========================
-           SECCIÓN MENÚ
-      ========================== -->
-      <section id="menu" class="section">
-        <div class="container">
-          <div class="eyebrow" data-es="Menú" data-en="Menu">Menú</div>
-          <h2 class="title" data-es="Nuestra Carta" data-en="Our Menu">Nuestra Carta</h2>
+      <div class="container">
+        <div class="eyebrow" data-es="Menú" data-en="Menu">Menú</div>
+        <h2 class="title" data-es="Nuestra Carta" data-en="Our Menu">Nuestra Carta</h2>
 
           <div class="allergen-guide">
             <h3>Alérgenos / Allergens</h3>
 
-            <div class="allergen-legend">
-              <div class="legend-item">
-                <span class="legend-icon allergen sesame">⚪</span>
-                <small>Sésamo / Sesame</small>
+          <div class="allergen-legend">
+            <div class="legend-item">
+              <span class="legend-icon allergen sesame"></span>
+              <small>Sésamo · Sesame</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen fish"></span>
+              <small>Pescado · Fish</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen shellfish"></span>
+              <small>Moluscos · Shellfish</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen crustaceans"></span>
+              <small>Crustáceos · Crustaceans</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen dairy"></span>
+              <small>Lácteos · Dairy</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen soy"></span>
+              <small>Soja · Soy</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen mustard"></span>
+              <small>Mostaza · Mustard</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen eggs"></span>
+              <small>Huevos · Eggs</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen gluten"></span>
+              <small>Gluten</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen nuts"></span>
+              <small>Frutos secos · Nuts</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen peanuts"></span>
+              <small>Cacahuetes · Peanuts</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon allergen celery"></span>
+              <small>Apio · Celery</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-wrap">
+          <div class="menu-tabs">
+            <button class="menu-tab active" data-filter="entradas" data-es="Entradas" data-en="Starters">Entradas</button>
+            <button class="menu-tab" data-filter="clasicos" data-es="Clásicos" data-en="Classics">Clásicos</button>
+            <button class="menu-tab" data-filter="tandoori" data-es="Tandoori" data-en="Tandoori">Tandoori</button>
+            <button class="menu-tab" data-filter="especiales" data-es="Especiales" data-en="Specials">Especiales</button>
+            <button class="menu-tab" data-filter="curries" data-es="Curries" data-en="Curries">Curries</button>
+            <button class="menu-tab" data-filter="pan-arroz" data-es="Pan y Arroz" data-en="Bread & Rice">Pan y Arroz</button>
+            <button class="menu-tab" data-filter="biryani" data-es="Biryanis" data-en="Biryanis">Biryanis</button>
+          </div>
+
+          <!-- ENTRADAS -->
+          <div class="menu-category active" data-category="entradas">
+            <div class="cat-title" data-es="Entradas y Ensaladas" data-en="Starters & Salads">
+              Entradas y Ensaladas
+            </div>
+            <div
+              class="cat-sub"
+              data-es="Entrantes tradicionales, opciones tandoori y ensaladas frescas."
+              data-en="Traditional starters, tandoori options and fresh salads."
+            >
+              Entrantes tradicionales, opciones tandoori y ensaladas frescas.
+            </div>
+
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Entrantes" data-en="Starters">Entrantes</div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Soup · Sopas</div>
+                    <div class="dish-desc">Tomato soup, daal soup, vegetable soup or chicken soup.</div>
+                    <div class="dish-desc-alt">Sopa de tomate, sopa daal, sopa de verduras o sopa de pollo.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen gluten">Gluten</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">3,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen fish">🐟</span>
-                <small>Pescado / Fish</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Popadoms with Chutney</div>
+                    <div class="dish-desc">Papadoms, dry dough flat cakes made from lentil flour, served with chutney.</div>
+                    <div class="dish-desc-alt">Papadoms, tortas planas de masa seca hechas de harina de lentejas, con chutney.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">1,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen molluscs">🦪</span>
-                <small>Moluscos / Molluscs</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Onion Bhaji</div>
+                    <div class="dish-desc">Round crispy shredded onion fried in our authentic spice batter.</div>
+                    <div class="dish-desc-alt">Cebolla redonda, crujiente y rallada frita en nuestra auténtica masa de especias.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen gluten">Gluten</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">4,50</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen crustaceans">🦐</span>
-                <small>Crustáceos / Crustaceans</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Vegetable Pakora</div>
+                    <div class="dish-desc">Deep fried seasonal vegetables mashed with gram flour and spices.</div>
+                    <div class="dish-desc-alt">Verduras de temporada fritas en puré con harina de garbanzo y especias.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen gluten">Gluten</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">4,50</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen dairy">🥛</span>
-                <small>Lácteos / Dairy</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Samosas</div>
+                    <div class="dish-desc">Stuffed with vegetable or minced lamb tempered with cumin, ginger, green chillies and coriander.</div>
+                    <div class="dish-desc-alt">Relleno de verdura o cordero picado con comino, jengibre, chiles verdes y cilantro.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen gluten">Gluten</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">Veg 5,50 · Meat 6,50</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen soy">🫘</span>
-                <small>Soja / Soy</small>
+            </div>
+
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Tandoori Entrantes" data-en="Tandoori Starters">
+                Tandoori Entrantes
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen mustard">🌿</span>
-                <small>Mostaza / Mustard</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Tandoori Chicken</div>
+                    <div class="dish-desc">Marinated chicken in mild spices with yoghurt and cooked in tandoori oven.</div>
+                    <div class="dish-desc-alt">Pollo marinado en especias suaves con yogur y cocinado en horno tandoori.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">6,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen eggs">🥚</span>
-                <small>Huevos / Eggs</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tikka</div>
+                    <div class="dish-desc">Marinated chicken in mild spices with yoghurt and cooked in tandoori oven.</div>
+                    <div class="dish-desc-alt">Pollo marinado en especias suaves con yogur y cocinado en horno tandoori.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">6,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen gluten">🌾</span>
-                <small>Gluten</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Seekh Kebab</div>
+                    <div class="dish-desc">Traditional starter of minced lamb and spices grilled on a skewer over charcoal.</div>
+                    <div class="dish-desc-alt">Entrante tradicional de cordero picado y especias a la parrilla en brocheta.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
+                    </div>
+                    <div class="dish-price">€7,95</div>
+                  </div>
+                  <div class="dish-price">7,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen nuts">🥜</span>
-                <small>Frutos secos / Nuts</small>
+            </div>
+
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Ensaladas" data-en="Salads">Ensaladas</div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Mix Salad</div>
+                    <div class="dish-desc">Lettuce, cucumber, tomato, olives and corn.</div>
+                    <div class="dish-desc-alt">Lechuga, pepino, tomate, aceitunas y maíz.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Sin alérgenos destacados</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">6,95</div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen peanuts">🥜</span>
-                <small>Cacahuetes / Peanuts</small>
-              </div>
-              <div class="legend-item">
-                <span class="legend-icon allergen celery">🥬</span>
-                <small>Apio / Celery</small>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tikka Salad</div>
+                    <div class="dish-desc">Tikka chicken, lettuce, cucumber, tomato, olives and corn.</div>
+                    <div class="dish-desc-alt">Pollo tikka, lechuga, pepino, tomate, aceitunas y maíz.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                    </div>
+                  </div>
+                  <div class="dish-price">9,95</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="menu-wrap">
-            <div class="menu-tabs">
-              <button class="menu-tab active" data-filter="entradas" data-es="Entradas" data-en="Starters">Entradas</button>
-              <button class="menu-tab" data-filter="clasicos" data-es="Clásicos" data-en="Classics">Clásicos</button>
-              <button class="menu-tab" data-filter="tandoori" data-es="Tandoori" data-en="Tandoori">Tandoori</button>
-              <button class="menu-tab" data-filter="especiales" data-es="Especiales" data-en="Specials">Especiales</button>
-              <button class="menu-tab" data-filter="vegetarianos" data-es="Vegetarianos" data-en="Vegetarian">Vegetarianos</button>
-              <button class="menu-tab" data-filter="pan-arroz" data-es="Pan y Arroz" data-en="Bread & Rice">Pan y Arroz</button>
-              <button class="menu-tab" data-filter="biryani" data-es="Biryani" data-en="Biryani">Biryani</button>
-              <button class="menu-tab" data-filter="kids" data-es="Kids" data-en="Kids">Kids</button>
+          <!-- CLASICOS -->
+          <div class="menu-category" data-category="clasicos">
+            <div class="cat-title" data-es="Platos Clásicos y Regionales" data-en="Classic & Regional Dishes">
+              Platos Clásicos y Regionales
+            </div>
+            <div
+              class="cat-sub"
+              data-es="Salsas tradicionales y extras para combinar con tu proteína favorita."
+              data-en="Traditional sauces and extras to combine with your preferred protein."
+            >
+              Salsas tradicionales y extras para combinar con tu proteína favorita.
             </div>
 
-            <!-- ENTRADAS -->
-            <div class="menu-category active" data-category="entradas">
-              <div class="cat-title" data-es="Entradas y Ensaladas" data-en="Starters & Salads">Entradas y Ensaladas</div>
-              <div class="cat-sub" data-es="Entrantes tradicionales, opciones tandoori y ensaladas frescas." data-en="Traditional starters, tandoori options and fresh salads.">
-                Entrantes tradicionales, opciones tandoori y ensaladas frescas.
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Estilos de salsa" data-en="Sauce styles">Estilos de salsa</div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Curry Dishes</div>
+                    <div class="dish-desc">Cooked with traditional herbs in our flavored homemade curry sauce, order mild, medium or hot.</div>
+                    <div class="dish-desc-alt">Cocinado con hierbas tradicionales en salsa curry casera, a elegir suave, medio o picante.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Puede variar</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Entrantes" data-en="Starters">Entrantes</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Soup / Sopas</div>
-                      <div class="dish-desc">Tomato soup, daal soup, vegetable soup or chicken soup.</div>
-                      <div class="dish-desc-alt">Sopa de tomate, sopa daal, sopa de verduras o sopa de pollo.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Korma Dishes</div>
+                    <div class="dish-desc">Dish prepared with cashew, coconut, butter and fresh cream.</div>
+                    <div class="dish-desc-alt">Plato elaborado con anacardo, coco, mantequilla y nata fresca.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                      <span class="allergen nuts">Frutos secos</span>
                     </div>
-                    <div class="dish-price">€3,95</div>
                   </div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Popadoms with Chutney</div>
-                      <div class="dish-desc">Papadoms, dry dough flat cakes made from lentil flour, served with chutney.</div>
-                      <div class="dish-desc-alt">Papadoms, tortas planas de masa seca hechas de harina de lentejas, con chutney.</div>
-                    </div>
-                    <div class="dish-price">€1,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Onion Bhaji</div>
-                      <div class="dish-desc">Round crispy shredded onion fried in our authentic spice batter.</div>
-                      <div class="dish-desc-alt">Cebolla redonda, crujiente y rallada frita en nuestra auténtica masa de especias.</div>
-                    </div>
-                    <div class="dish-price">€4,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Vegetable Pakora</div>
-                      <div class="dish-desc">Deep fried seasonal vegetables mashed with gram flour and spices.</div>
-                      <div class="dish-desc-alt">Verduras de temporada fritas en puré con harina de garbanzos y especias.</div>
-                    </div>
-                    <div class="dish-price">€4,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Samosas</div>
-                      <div class="dish-desc">Stuffed with vegetable or minced lamb tempered with cumin, ginger, green chillies and coriander.</div>
-                      <div class="dish-desc-alt">Relleno de verdura o cordero picado templado con comino, jengibre, guindillas y cilantro.</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">Veg €5,50 / Meat €6,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Pakora</div>
-                      <div class="dish-desc">Chicken marinated with spices then deep fried in a batter for a crispy shell.</div>
-                      <div class="dish-desc-alt">Pollo marinado con especias y frito en una masa para obtener una cáscara crujiente.</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€5,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Fish Pakora</div>
-                      <div class="dish-desc">Fish marinated with spices then deep fried in a batter for a crispy shell.</div>
-                      <div class="dish-desc-alt">Pescado marinado con especias y frito en una masa para obtener una concha crujiente.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen gluten">🌾 Gluten</span>
-                        <span class="allergen fish">🐟 Fish</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€5,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Chat</div>
-                      <div class="dish-desc">Chicken tikka cooked with onions, tomato, pepper, herbs, topped with Indian fried puri.</div>
-                      <div class="dish-desc-alt">Pollo tikka cocinado con cebolla, tomate, pimiento y hierbas, cubierto con puri frito indio.</div>
-                    </div>
-                    <div class="dish-price">€5,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Aloo Chat</div>
-                      <div class="dish-desc">Diced potatoes with onions, tomato, pepper, herbs, topped with Indian fried puri.</div>
-                      <div class="dish-desc-alt">Papas cortadas en cubitos con cebolla, tomate, pimiento y hierbas, cubiertas con puri frito indio.</div>
-                    </div>
-                    <div class="dish-price">€5,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Prawn Puri</div>
-                      <div class="dish-desc">Prawn cooked with onions, tomato, bell pepper and herbs, topped with Indian fried puri.</div>
-                      <div class="dish-desc-alt">Langostino cocido con cebolla, tomate, pimiento morrón y hierbas, cubierto con puri frito indio.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen crustaceans">🦐 Crustáceos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€6,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Prawn Tempura</div>
-                      <div class="dish-desc">Battered prawns.</div>
-                      <div class="dish-desc-alt">Gambas rebozadas.</div>
-                    </div>
-                    <div class="dish-price">€8,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Entrantes -->
-
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Tandoori Entrantes" data-en="Tandoori Starters">Tandoori Entrantes</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Tandoori Chicken</div>
-                      <div class="dish-desc">Marinated chicken in mild spices with yoghurt and cooked in tandoori oven.</div>
-                      <div class="dish-desc-alt">Pollo marinado en especias suaves con yogur y cocinado en horno tandoori.</div>
-                    </div>
-                    <div class="dish-price">€6,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka</div>
-                      <div class="dish-desc">Marinated chicken in mild spices with yoghurt and cooked in tandoori oven.</div>
-                      <div class="dish-desc-alt">Pollo marinado en especias suaves con yogur y cocinado en horno tandoori.</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
-                    </div>
-                    <div class="dish-price">€6,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Lamb Tikka</div>
-                      <div class="dish-desc">Tender pieces of lamb in a spicy marinade cooked over charcoal in our tandoori oven.</div>
-                      <div class="dish-desc-alt">Tiernos trozos de cordero en un adobo picante cocidos sobre carbón en horno tandoori.</div>
-                    </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Seekh Kebab</div>
-                      <div class="dish-desc">A traditional starter of minced lamb and spices grilled on a skewer over charcoal.</div>
-                      <div class="dish-desc-alt">Entrante tradicional de cordero picado y especias a la parrilla en una brocheta sobre carbón.</div>
-                    </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mix Starter</div>
-                      <div class="dish-desc">Combination of onion bhaji, chicken tikka, chicken pakora and vegetable pakora.</div>
-                      <div class="dish-desc-alt">Combinación de bhaji de cebolla, pollo tikka, pakora de pollo y pakora de vegetales.</div>
-                    </div>
-                    <div class="dish-price">€9,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Cheese Rolls</div>
-                      <div class="dish-desc">Cheese, potato, gram flour, white pepper and green cardamom.</div>
-                      <div class="dish-desc-alt">Queso, patata, harina de garbanzo, pimienta blanca y cardamomo verde.</div>
-                    </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Hariyali Chicken Tikka</div>
-                      <div class="dish-desc">Chicken, spinach, curd and mint.</div>
-                      <div class="dish-desc-alt">Pollo, espinaca, yogur y menta.</div>
-                    </div>
-                    <div class="dish-price">€6,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Malai Tikka</div>
-                      <div class="dish-desc">Curd, almond and cashew nuts paste, green cardamom, white pepper and cream.</div>
-                      <div class="dish-desc-alt">Yogur marinado con especias, pasta de almendra y anacardo, cardamomo verde, pimienta blanca y crema.</div>
-                    </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Tandoori Entrantes -->
-
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Ensaladas" data-en="Salads">Ensaladas</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mix Salad</div>
-                      <div class="dish-desc">Lettuce, cucumber, tomato, olives and corn.</div>
-                      <div class="dish-desc-alt">Lechuga, pepino, tomate, olivas y maíz.</div>
-                    </div>
-                    <div class="dish-price">€6,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka Salad</div>
-                      <div class="dish-desc">Tikka chicken, lettuce, cucumber, tomato, olives and corn.</div>
-                      <div class="dish-desc-alt">Pollo tikka, lechuga, pepino, tomate, olivas y maíz.</div>
-                    </div>
-                    <div class="dish-price">€9,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Kisaan Special Salad</div>
-                      <div class="dish-desc">Tuna, Indian cottage cheese, lettuce, cucumber, red and green bell pepper, onion, tomato, olives and corn.</div>
-                      <div class="dish-desc-alt">Atún, queso cottage indio, lechuga, pepino, pimiento rojo y verde, cebolla, tomate, olivas y maíz.</div>
-                    </div>
-                    <div class="dish-price">€10,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Ensaladas -->
-            </div><!-- /menu-category entradas -->
-
-            <!-- CLASICOS -->
-            <div class="menu-category" data-category="clasicos">
-              <div class="cat-title" data-es="Platos Clásicos y Regionales" data-en="Classic & Regional Dishes">Platos Clásicos y Regionales</div>
-              <div class="cat-sub" data-es="Salsas tradicionales y extras para combinar con tu proteína favorita." data-en="Traditional sauces and extras to combine with your preferred protein.">
-                Salsas tradicionales y extras para combinar con tu proteína favorita.
               </div>
 
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Estilos de salsa" data-en="Sauce styles">Estilos de salsa</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Curry Dishes</div>
-                      <div class="dish-desc">Cooked with traditional herbs in our flavored homemade curry sauce (mild, medium or hot).</div>
-                      <div class="dish-desc-alt">Cocinado con hierbas tradicionales en nuestra salsa de curry casera con sabor (suave, medio o picante).</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Pasanda Dishes</div>
+                    <div class="dish-desc">Dish cooked with almond, coconut, dry fruits, mild spices and fresh cream.</div>
+                    <div class="dish-desc-alt">Plato cocinado con almendra, coco, frutos secos, especias suaves y nata fresca.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                      <span class="allergen nuts">Frutos secos</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Korma Dishes</div>
-                      <div class="dish-desc">Dish prepared with cashew, coconut, butter and fresh cream.</div>
-                      <div class="dish-desc-alt">Plato elaborado con anacardo, coco, mantequilla y nata fresca.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                        <span class="allergen nuts">🥜 Frutos secos</span>
-                      </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Karahi Dishes</div>
+                    <div class="dish-desc">Combination of diced onion, peppers, garlic, ginger, tomatoes and coriander seeds in a thick sauce.</div>
+                    <div class="dish-desc-alt">Combinación de cebolla, pimientos, ajo, jengibre, tomate y semillas de cilantro en salsa espesa.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Sin alérgenos destacados</span>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Pasanda Dishes</div>
-                      <div class="dish-desc">Dish cooked with almond, coconut, dry fruits, mild spices and fresh cream.</div>
-                      <div class="dish-desc-alt">Plato cocinado con almendra, coco, frutos secos, especias suaves y nata.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                        <span class="allergen nuts">🥜 Frutos secos</span>
-                      </div>
-                    </div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Opciones y precios" data-en="Options and prices">
+                Opciones y precios
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken</div>
+                    <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
                   </div>
+                  <div class="dish-price">9,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Karahi Dishes</div>
-                      <div class="dish-desc">Combination of diced onion, green and red capsicum, garlic, ginger, fresh tomatoes and coriander seeds in thick sauce.</div>
-                      <div class="dish-desc-alt">Combinación de cebolla picada, pimiento verde y rojo, ajo, jengibre, tomates frescos y semillas de cilantro en salsa espesa.</div>
-                    </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tikka</div>
+                    <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
                   </div>
+                  <div class="dish-price">10,50</div>
                 </div>
+              </div>
 
-              </div><!-- /menu-group Estilos de salsa -->
-
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Opciones y precios" data-en="Options and prices">Opciones y precios</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken</div>
-                      <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
-                    </div>
-                    <div class="dish-price">€9,95</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Lamb</div>
+                    <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
                   </div>
+                  <div class="dish-price">10,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka</div>
-                      <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
-                    </div>
-                    <div class="dish-price">€10,50</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">King Prawn</div>
+                    <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
                   </div>
+                  <div class="dish-price">11,95</div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Lamb</div>
-                      <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
-                    </div>
-                    <div class="dish-price">€10,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">King Prawn</div>
-                      <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
-                      <div class="allergen-tags">
-                        <span class="allergen crustaceans">🦐 Crustáceos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Fish</div>
-                      <div class="dish-desc-alt">Curry, Korma, Pasanda, Karahi</div>
-                      <div class="allergen-tags">
-                        <span class="allergen fish">🐟 Fish</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€11,45</div>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
 
               </div><!-- /menu-group Opciones y precios -->
 
@@ -633,105 +472,51 @@
                 Cada selección tandoori se sirve con salsa bhuna, limón y ensalada de temporada.
               </div>
 
-              <div class="menu-group">
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka Sizzler</div>
-                      <div class="dish-desc">Tender chicken pieces marinated in yoghurt, herbs and spices and roasted in a tandoor, served on sizzling plate with curry sauce.</div>
-                      <div class="dish-desc-alt">Trozos tiernos de pollo marinados en yogur, hierbas y especias y asados en tandoor, servidos en plato sizzling con salsa de curry.</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
+            <div class="menu-group">
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tikka Sizzler</div>
+                    <div class="dish-desc">Tender chicken pieces marinated in yoghurt, herbs and spices, roasted in a tandoor.</div>
+                    <div class="dish-desc-alt">Trozos tiernos de pollo marinados en yogur, hierbas y especias, asados en tandoor.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
                     </div>
-                    <div class="dish-price">€11,95</div>
                   </div>
+                  <div class="dish-price">11,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Lamb Tikka Sizzler</div>
-                      <div class="dish-desc">Marinated lamb with green chillies, garlic and ginger, served in a sizzling plate with hot curry sauce.</div>
-                      <div class="dish-desc-alt">Cordero adobado con chiles verdes, ajo y jengibre, servido en plato hirviente con curry picante.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Lamb Tikka Sizzler</div>
+                    <div class="dish-desc">Marinated lamb with green chillies, garlic and ginger, served on a sizzling plate.</div>
+                    <div class="dish-desc-alt">Cordero adobado con chiles verdes, ajo y jengibre, servido en plato sizzling.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
                     </div>
-                    <div class="dish-price">€13,95</div>
                   </div>
+                  <div class="dish-price">13,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tandoori</div>
-                      <div class="dish-desc">Spice marinated chicken on the bone roasted, served in sizzling plate with curry sauce.</div>
-                      <div class="dish-desc-alt">Pollo asado con hueso marinado con especias, servido en plato caliente con salsa de curry.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Special Mix Grill</div>
+                    <div class="dish-desc">Combination of tandoori chicken, chicken tikka, lamb tikka, tandoori prawn and seekh kebab.</div>
+                    <div class="dish-desc-alt">Combinación de pollo tandoori, pollo tikka, cordero tikka, gamba tandoori y seekh kebab.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                      <span class="allergen crustaceans">Crustáceos</span>
                     </div>
-                    <div class="dish-price">€11,95</div>
                   </div>
+                  <div class="dish-price">14,95</div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Shashlik Tikka</div>
-                      <div class="dish-desc">A spicy sensation. Boneless chicken or lamb marinated in yoghurt and spices, skewered with green and red peppers.</div>
-                      <div class="dish-desc-alt">Una sensación picante. Pollo o cordero deshuesado marinado en yogur y especias, ensartado con pimientos verdes y rojos.</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
-                    </div>
-                    <div class="dish-price">Chicken €12,95 / Lamb €14,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Special Mix Grill</div>
-                      <div class="dish-desc">Combination of tandoori chicken, chicken tikka, lamb tikka, tandoori prawn and seekh kebab served on a sizzling plate with special sauce.</div>
-                      <div class="dish-desc-alt">Combinación de pollo tandoori, pollo tikka, cordero tikka, gambas tandoori y seekh kebab servidos en un plato chisporroteante con salsa especial.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                        <span class="allergen crustaceans">🦐 Crustáceos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€14,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Tandoori King Prawn</div>
-                      <div class="dish-desc">King prawn marinated with ginger, garlic paste, lemon juice, herbs and spices.</div>
-                      <div class="dish-desc-alt">Langostino marinado con jengibre, pasta de ajo, jugo de limón, hierbas y especias.</div>
-                      <div class="allergen-tags"><span class="allergen crustaceans">🦐 Crustáceos</span></div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Seekh Kebab</div>
-                      <div class="dish-desc">Traditional starter of minced lamb and spices grilled on a skewer over charcoal.</div>
-                      <div class="dish-desc-alt">Entrante tradicional de cordero picado y especias a la parrilla en una brocheta sobre carbón.</div>
-                    </div>
-                    <div class="dish-price">€12,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Tandoori Lamb Chops</div>
-                      <div class="dish-desc">Tandoori marinated lamb chops.</div>
-                      <div class="dish-desc-alt">Chuletas de cordero marinadas al estilo tandoori.</div>
-                    </div>
-                    <div class="dish-price">€14,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group -->
-            </div><!-- /menu-category tandoori -->
+              </div>
+            </div>
+          </div>
 
             <!-- ESPECIALES -->
             <div class="menu-category" data-category="especiales">
@@ -740,82 +525,52 @@
                 Platos emblemáticos de Kisaan con recetas de la casa.
               </div>
 
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Especiales de la Casa" data-en="House Specials">Especiales de la Casa</div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Especiales" data-en="Specials">Especiales</div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Butter Chicken</div>
-                      <div class="dish-desc">Boneless tandoori chicken cooked with tomato sauce, butter and fresh cream.</div>
-                      <div class="dish-desc-alt">Pollo tandoori deshuesado cocido con salsa de tomate, mantequilla y nata fresca.</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Butter Chicken</div>
+                    <div class="dish-desc">Boneless tandoori chicken cooked with tomato sauce, butter and fresh cream.</div>
+                    <div class="dish-desc-alt">Pollo tandoori deshuesado cocido con salsa de tomate, mantequilla y nata fresca.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
                     </div>
-                    <div class="dish-price">€11,95</div>
                   </div>
+                  <div class="dish-price">11,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tawa Masala</div>
-                      <div class="dish-desc">Succulent chicken tossed with fresh herbs and spices, authentic bhuna-style.</div>
-                      <div class="dish-desc-alt">Pollo suculento mezclado con hierbas frescas y especias, estilo bhuna auténtico.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tawa Masala</div>
+                    <div class="dish-desc">Succulent chicken tossed with fresh herbs and spices, authentic bhuna-style.</div>
+                    <div class="dish-desc-alt">Pollo jugoso salteado con hierbas frescas y especias, estilo bhuna auténtico.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
                     </div>
-                    <div class="dish-price">€11,95</div>
                   </div>
+                  <div class="dish-price">11,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken or Lamb Mango</div>
-                      <div class="dish-desc">Chicken or lamb cooked with creamy mango sauce and mild spices.</div>
-                      <div class="dish-desc-alt">Pollo o cordero cocinado con salsa cremosa de mango y especias suaves.</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken or Lamb Mango</div>
+                    <div class="dish-desc">Chicken or lamb cooked with creamy mango sauce and mild spices.</div>
+                    <div class="dish-desc-alt">Pollo o cordero cocinado con salsa cremosa de mango y especias suaves.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
                     </div>
-                    <div class="dish-price">Chicken €10,95 / Lamb €12,95</div>
                   </div>
+                  <div class="dish-price">10,95 · 12,95</div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Murgh Masala</div>
-                      <div class="dish-desc">Chicken cooked in a sauce of spiced minced lamb, tomatoes, coriander and capsicum. Rich and spicy.</div>
-                      <div class="dish-desc-alt">Pollo cocido en salsa de cordero picado especiado, tomates, cilantro y pimiento. Rico y picante.</div>
-                    </div>
-                    <div class="dish-price">€12,90</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mughlai Chicken</div>
-                      <div class="dish-desc">North Indian style recipe cooked with cream, yogurt, onions, ginger, garlic, cumin, cashew nuts, green chillies and mixed spices.</div>
-                      <div class="dish-desc-alt">Receta estilo norte de India cocinada con crema, yogur, cebolla, jengibre, ajo, comino, anacardos, chiles verdes y especias.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Goan King Prawn</div>
-                      <div class="dish-desc">Traditional Goan king prawn dish cooked with onions and coconuts, flavored with mint and mustard.</div>
-                      <div class="dish-desc-alt">Plato tradicional de langostino de Goa cocinado con cebolla y coco, aromatizado con menta y mostaza.</div>
-                      <div class="allergen-tags">
-                        <span class="allergen mustard">🌿 Mostaza</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
 
                 <div class="menu-item">
                   <div class="menu-item-top">
@@ -829,259 +584,82 @@
                   </div>
                 </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chilli Chicken</div>
-                      <div class="dish-desc">Classic chicken breast tossed with garlic, green chillies and peppers.</div>
-                      <div class="dish-desc-alt">Pechuga de pollo clásica mezclada con ajo, chiles verdes y pimientos.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Estilos de curry" data-en="Curry styles">Estilos de curry</div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mutton Kofta</div>
-                      <div class="dish-desc">Mutton keema, spices, onion gravy.</div>
-                      <div class="dish-desc-alt">Albóndigas de cordero picado, especias, salsa de cebolla.</div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Murg Jaipuri Chicken</div>
-                      <div class="dish-desc">Chicken, sesame seeds, green cardamom, onion gravy.</div>
-                      <div class="dish-desc-alt">Pollo, semillas de sésamo, cardamomo verde, salsa de cebolla.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Murg Lababdar</div>
-                      <div class="dish-desc">Chicken, onion, red pepper, green pepper, cheese.</div>
-                      <div class="dish-desc-alt">Pollo, cebolla, pimiento rojo, pimiento verde, queso.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Rara Gosht Lamb</div>
-                      <div class="dish-desc">Lamb cooked with spices, minced meat and thick onion and tomato curry sauce.</div>
-                      <div class="dish-desc-alt">Cordero cocinado con especias, carne picada y salsa espesa de cebolla y tomate al curry.</div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Murg Dahi Kaali Mirch</div>
-                      <div class="dish-desc">Chicken, cheese, curd, black pepper, green cardamom, onion gravy.</div>
-                      <div class="dish-desc-alt">Pollo, queso, cuajada, pimienta negra, cardamomo verde, salsa de cebolla.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mix Curry</div>
-                      <div class="dish-desc">Prawns, chicken, lamb, onion gravy.</div>
-                      <div class="dish-desc-alt">Gambas, pollo, cordero, salsa de cebolla.</div>
-                    </div>
-                    <div class="dish-price">€12,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chilli Paneer</div>
-                      <div class="dish-desc">Cheese, red and green pepper, chilli sauce, soya sauce, sweet chilli sauce, garlic and ginger paste.</div>
-                      <div class="dish-desc-alt">Queso paneer, pimiento rojo y verde, salsa picante, salsa de soja, salsa agridulce de chile, pasta de ajo y jengibre.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chilli Prawn</div>
-                      <div class="dish-desc">Prawns, chilli sauce, soya sauce, sweet chilli sauce, garlic and ginger paste.</div>
-                      <div class="dish-desc-alt">Gambas, salsa picante, salsa de soja, salsa agridulce de chile, pasta de ajo y jengibre.</div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Mushroom Paneer</div>
-                      <div class="dish-desc">Mushroom, paneer cheese, thick onion gravy.</div>
-                      <div class="dish-desc-alt">Champiñones, queso paneer, salsa espesa de cebolla.</div>
-                    </div>
-                    <div class="dish-price">€11,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Especiales de la Casa -->
-
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Platos Tikka Masala" data-en="Tikka Masala Dishes">Platos Tikka Masala</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-desc">A well known UK dish, prepared with almonds, coconuts, butter, tomato sauce and fresh cream, as the traditional style.</div>
-                      <div class="dish-desc-alt">Un conocido plato del Reino Unido, preparado con almendras, coco, mantequilla, salsa de tomate y nata fresca, al estilo tradicional.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Balti Dishes · Medium</div>
+                    <div class="dish-desc">Cooked with garlic, ginger, tomato, onion, yoghurt and fresh coriander.</div>
+                    <div class="dish-desc-alt">Cocinado con ajo, jengibre, tomate, cebolla, yogur y cilantro fresco.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
                     </div>
                   </div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Chicken Tikka / Pollo</div></div>
-                    <div class="dish-price">€11,90</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Lamb / Cordero</div></div>
-                    <div class="dish-price">€12,90</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">King Prawn / Langostino</div></div>
-                    <div class="dish-price">€13,90</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Fish / Pescado</div></div>
-                    <div class="dish-price">€13,90</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Tikka Masala -->
-            </div><!-- /menu-category especiales -->
-
-            <!-- VEGETARIANOS -->
-            <div class="menu-category" data-category="vegetarianos">
-              <div class="cat-title" data-es="Platos Vegetarianos" data-en="Vegetable Dishes">Platos Vegetarianos</div>
-              <div class="cat-sub" data-es="Surtido de verduras frescas cocinadas en delicadas especias." data-en="Assortment of fresh vegetables cooked in delicate spices.">
-                Surtido de verduras frescas cocinadas en delicadas especias.
               </div>
 
-              <div class="menu-group">
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Mixed Vegetable Curry / Verduras variadas con curry</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Mushroom Bhaji / Champiñones Bhaji</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Bombay Potatoes / Patatas Bombay</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Aloo Gobi (Potatoes & Cauliflower) / Patatas con coliflor</div></div>
-                    <div class="dish-price">€8,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Sag Aloo (Spinach with Potatoes) / Espinacas con patatas</div></div>
-                    <div class="dish-price">€8,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Sag Ponir (Spinach with Cheese) / Espinacas con queso</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Madras Dishes · Hot</div>
+                    <div class="dish-desc">Popular dish with a very hot taste, suitable for people with strong constitution.</div>
+                    <div class="dish-desc-alt">Plato popular de sabor muy picante, apto para quienes toleran bien el picante.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Puede variar</span>
                     </div>
-                    <div class="dish-price">€9,95</div>
                   </div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Channa Masala </div>
-                      <div class="dish-desc">Chick Peas Cooked With Onions & Spices</div>
-                      <div class="dish-desc-alt">Garbanzos Cocidos con Cebollas y Especias.</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Jalfrezi Dishes · Hot</div>
+                    <div class="dish-desc">Freshly ground spices with onions and green peppers for an extra special flavor.</div>
+                    <div class="dish-desc-alt">Especias recién molidas con cebolla y pimientos verdes para un sabor especial.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Sin alérgenos destacados</span>
                     </div>
-                    <div class="dish-price">€7,95</div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Tarka Daal </div>
-                    <div class="dish-desc">Lentils Spiced With Garlic</div>
-                    <div class="dish-desc-alt">Lentejas condimentadas con Ajo.</div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Opciones y precios" data-en="Options and prices">
+                Opciones y precios
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken · Pollo</div>
                   </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
+                  <div class="dish-price">9,95</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Sag Bhaji </div>
-                    <div class="dish-desc">Spinach Cooked With Onion, Garlic & Ginger</div>
-                    <div class="dish-desc-alt">Espinacas Cocinadas con Cebolla, Ajo y Jengibre</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Chicken Tikka · Pollo Tikka</div>
                   </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
+                  <div class="dish-price">10,50</div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Dal Makhani</div>
-                      <div class="dish-desc">Buttery, creamy and flavorful slow cooked black lentils.</div>
-                      <div class="dish-desc-alt">Lentejas negras mantecosas, cremosas y sabrosas cocidas a fuego lento.</div>
-                    </div>
-                    <div class="dish-price">€8,95</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Lamb · Cordero</div>
                   </div>
+                  <div class="dish-price">10,95</div>
                 </div>
-
-              </div><!-- /menu-group -->
-            </div><!-- /menu-category vegetarianos -->
+              </div>
+            </div>
+          </div>
 
             <!-- PAN Y ARROZ -->
             <div class="menu-category" data-category="pan-arroz">
@@ -1090,246 +668,43 @@
                 Panes al tandoor y acompañamientos de arroz.
               </div>
 
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Tandoori Naan Breads" data-en="Tandoori Naan Breads">Tandoori Naan Breads</div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Tandoori Naan Breads" data-en="Tandoori Naan Breads">
+                Tandoori Naan Breads
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Plain Naan / Naan</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Plain Naan · Naan</div></div><div class="dish-price">2,55</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Butter Naan · Naan de Mantequilla</div></div><div class="dish-price">2,80</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Garlic Naan · Naan de Ajo</div></div><div class="dish-price">3,20</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Cheese Naan · Naan de Queso</div></div><div class="dish-price">3,20</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Peshwari Naan</div></div><div class="dish-price">3,40</div></div></div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-desc-alt">
+                      Los panes pueden variar en alérgenos según sus ingredientes; los que llevan mantequilla o queso contienen lácteos, y el Peshwari Naan incluye frutos secos.
                     </div>
-                    <div class="dish-price">€2,55</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Butter Naan / Naan de Mantequilla</div>
-                      <div class="allergen-tags">
-                        <span class="allergen gluten">🌾 Gluten</span>
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                      </div>
+                    <div class="allergen-tags">
+                      <span class="allergen gluten">Gluten</span>
+                      <span class="allergen dairy">Lácteos</span>
+                      <span class="allergen nuts">Frutos secos</span>
                     </div>
-                    <div class="dish-price">€2,80</div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Garlic Naan / Naan de Ajo</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Rices · Arroces" data-en="Rices">Rices · Arroces</div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Cheese Naan / Naan de Queso</div>
-                      <div class="allergen-tags">
-                        <span class="allergen gluten">🌾 Gluten</span>
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chilli Naan / Naan de Chile</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Onion Naan / Naan de Cebolla</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Garlic Cheese Naan / Naan de Ajo y Queso</div>
-                      <div class="allergen-tags">
-                        <span class="allergen gluten">🌾 Gluten</span>
-                        <span class="allergen dairy">🥛 Lácteos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€3,40</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Keema Naan / Naan con Especias</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€3,40</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Peshwari Naan / Naan Peshwari (coco y sultanas)</div>
-                      <div class="allergen-tags">
-                        <span class="allergen gluten">🌾 Gluten</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€3,40</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Tandoori Roti</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€2,55</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Tandoori Paratha</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€2,80</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Aloo Paratha</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chapati</div>
-                      <div class="allergen-tags"><span class="allergen gluten">🌾 Gluten</span></div>
-                    </div>
-                    <div class="dish-price">€1,80</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Tandoori Naan Breads -->
-
-              <div class="menu-group">
-                <div class="menu-group-title" data-es="Arroces" data-en="Rices">Arroces</div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Plain Rice / Arroz Hervido</div></div>
-                    <div class="dish-price">€2,55</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Pilau Rice / Arroz Pilau</div></div>
-                    <div class="dish-price">€2,80</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Egg Fried Rice / Huevo Frito con Arroz</div>
-                      <div class="allergen-tags"><span class="allergen eggs">🥚 Huevos</span></div>
-                    </div>
-                    <div class="dish-price">€3,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Mushroom Fried Rice / Arroz Frito con Champiñones</div></div>
-                    <div class="dish-price">€3,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Fried Rice / Arroz Frito</div></div>
-                    <div class="dish-price">€3,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Special Pilau Rice / Arroz Pilau Especial</div>
-                    </div>
-                    <div class="dish-price">€3,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Keema Rice / Arroz Keema</div></div>
-                    <div class="dish-price">€3,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Lemon Rice / Arroz al Limón</div></div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Vegetable Rice / Arroz con Verduras</div></div>
-                    <div class="dish-price">€3,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Onion Rice / Arroz con Cebolla</div></div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Garlic Rice / Arroz al Ajillo</div></div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Coconut Rice / Arroz al Coco</div></div>
-                    <div class="dish-price">€3,20</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Arroces -->
-            </div><!-- /menu-category pan-arroz -->
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Plain Rice · Arroz Hervido</div></div><div class="dish-price">2,55</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Pilau Rice · Arroz Pilau</div></div><div class="dish-price">2,80</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Egg Fried Rice · Arroz Frito con Huevo</div></div><div class="dish-price">3,50</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Vegetable Rice · Arroz con Verduras</div></div><div class="dish-price">3,50</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Garlic Rice · Arroz al Ajillo</div></div><div class="dish-price">3,20</div></div></div>
+            </div>
+          </div>
 
             <!-- BIRYANI -->
             <div class="menu-category" data-category="biryani">
@@ -1349,145 +724,64 @@
                   </div>
                 </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Biryani / Pollo</div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="House Specials" data-en="House Specials">House Specials</div>
+
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Garlic Chilli Chicken</div>
+                    <div class="dish-desc">Chicken cooked with garlic, fresh green chillies and special herbs.</div>
+                    <div class="dish-desc-alt">Pollo cocinado con ajo, chiles verdes frescos y hierbas especiales.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
                     </div>
-                    <div class="dish-price">€11,95</div>
                   </div>
+                  <div class="dish-price">11,95</div>
                 </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka Biryani / Pollo</div>
-                    </div>
-                    <div class="dish-price">€12,50</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Lamb Biryani / Cordero</div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">King Prawn Biryani / Langostino</div>
-                      <div class="allergen-tags">
-                        <span class="allergen crustaceans">🦐 Crustáceos</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Fish Biryani / Pescado</div>
-                      <div class="allergen-tags">
-                        <span class="allergen fish">🐟 Fish</span>
-                      </div>
-                    </div>
-                    <div class="dish-price">€13,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Vegetable Biryani / Vegetal</div>
-                    </div>
-                    <div class="dish-price">€10,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Special Kisaan Biryani</div>
-                    </div>
-                    <div class="dish-price">€14,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group Biryani Dishes -->
-
-
-            </div><!-- /menu-category biryani -->
-
-            <!-- KIDS -->
-            <div class="menu-category" data-category="kids">
-              <div class="cat-title" data-es="Menú Infantil" data-en="Kids Menu">Menú Infantil</div>
-              <div class="cat-sub" data-es="Opciones pensadas para niños." data-en="Child-friendly options.">
-                Opciones pensadas para niños.
               </div>
 
-              <div class="menu-group">
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Cheese Burger with Chips / Hamburguesa con Queso y Patatas</div>
-                      <div class="allergen-tags"><span class="allergen dairy">🥛 Lácteos</span></div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-name">Kisaan Special Chicken Tikka</div>
+                    <div class="dish-desc">Special chicken tikka cooked in a rich house-style sauce with selected spices.</div>
+                    <div class="dish-desc-alt">Pollo tikka especial cocinado en salsa rica al estilo de la casa con especias seleccionadas.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen none">Consultar</span>
                     </div>
-                    <div class="dish-price">€7,95</div>
                   </div>
+                  <div class="dish-price">12,90</div>
                 </div>
+              </div>
+            </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Burger with Chips / Hamburguesa con Patatas</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
+            <div class="menu-group">
+              <div class="menu-group-title" data-es="Biryani Dishes" data-en="Biryani Dishes">Biryani Dishes</div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Chicken Burger with Chips / Hamburguesa de Pollo con Patatas</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main"><div class="dish-name">Chicken Nuggets with Chips / Nuggets de Pollo con Patatas</div></div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Korma with Rice or Chips / Pollo Korma con Arroz o Patatas</div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <div class="menu-item-main">
+                    <div class="dish-desc">Basmati rice cooked with special spices and served with vegetable curry sauce.</div>
+                    <div class="dish-desc-alt">Arroz basmati cocinado con especias especiales y servido con salsa curry de verduras.</div>
+                    <div class="allergen-tags">
+                      <span class="allergen dairy">Lácteos</span>
+                      <span class="allergen crustaceans">Crustáceos</span>
                     </div>
-                    <div class="dish-price">€7,95</div>
                   </div>
                 </div>
+              </div>
 
-                <div class="menu-item">
-                  <div class="menu-item-top">
-                    <div class="menu-item-main">
-                      <div class="dish-name">Chicken Tikka Masala with Rice or Chips / Pollo Tikka Masala con Arroz o Patatas</div>
-                    </div>
-                    <div class="dish-price">€7,95</div>
-                  </div>
-                </div>
-
-              </div><!-- /menu-group -->
-            </div><!-- /menu-category kids -->
-
-          </div><!-- /menu-wrap -->
-        </div><!-- /container -->
-      </section>
-      <!-- Fin sección menú -->
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Chicken Biryani · Biryani de Pollo</div></div><div class="dish-price">10,95</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Chicken Tikka Biryani · Biryani de Pollo Tikka</div></div><div class="dish-price">11,95</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Lamb Biryani · Biryani de Cordero</div></div><div class="dish-price">11,95</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">King Prawn Biryani · Biryani de Langostino</div></div><div class="dish-price">12,95</div></div></div>
+              <div class="menu-item"><div class="menu-item-top"><div class="menu-item-main"><div class="dish-name">Vegetable Biryani · Biryani de Verduras</div></div><div class="dish-price">9,95</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
 
       <!-- =========================
            SECCIÓN GALERÍA
@@ -1505,6 +799,9 @@
             <img src="images/g4.jpg" alt="Galería 4">
             <img src="images/g5.jpg" alt="Galería 5">
             <img src="images/g6.jpg" alt="Galería 6">
+            <img src="images/g7.jpg" alt="Galería 7">
+            <img src="images/g8.jpg" alt="Galería 8">
+            <img src="images/g9.jpg" alt="Galería 9">
           </div>
         </div>
       </section>
