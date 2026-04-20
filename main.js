@@ -131,3 +131,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // 🔹 Aplicar idioma inicial
   refreshLanguage();
 });
+
